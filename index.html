@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102d2b">
+  <meta name="description" content="OmniDex: Scaling Dexterous Hand Grasping to Diverse Cluttered Scenes.">
+  <title>OmniDex | Dexterous Grasping in Cluttered Scenes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=5">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="OmniDex home"><img src="assets/logo.png" alt=""><span>OmniDex</span></a>
+    <nav class="main-nav" aria-label="Primary navigation">
+      <a href="#abstract">Abstract</a><a href="#benchmark">Benchmark</a><a href="#results">Results</a><a href="#citation">Citation</a>
+    </nav>
+    <div class="header-actions"><a class="header-link" href="media/OmniDex_NIPS.pdf" target="_blank" rel="noreferrer">Paper <span>↗</span></a><a class="header-link" href="https://github.com/" target="_blank" rel="noreferrer">Code <span>↗</span></a></div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-content">
+        <h1 id="hero-title">OmniDex</h1>
+        <p class="hero-title">Scaling Dexterous Hand Grasping to Diverse Cluttered Scenes</p>
+        <div class="hero-actions"><a class="button button-primary" href="media/OmniDex_NIPS.pdf" target="_blank" rel="noreferrer">Paper <span>↗</span></a><a class="button button-quiet" href="https://github.com/" target="_blank" rel="noreferrer">Code <span>↗</span></a></div>
+      </div>
+      <div class="hero-scroll">Scroll to explore <span>↓</span></div>
+    </section>
+
+    <section class="section abstract-section" id="abstract">
+      <div class="section-heading"><span>01</span><h2>Abstract</h2></div>
+      <figure class="wide-figure"><img src="assets/fig0.png" alt="OmniDex overview of multimodal inputs, scene generation, and grasping benchmark" loading="lazy"></figure>
+      <div class="contributions"><article><span>01</span><div><h3>Data scale</h3><p>2.6M cluttered scenes and 0.4B validated grasp poses.</p></div></article><article><span>02</span><div><h3>Data diversity</h3><p>Five scene regimes, diverse supports, objects, and views.</p></div></article><article><span>03</span><div><h3>OmniDex model</h3><p>Multimodal generation with Soft-WTA and physical constraints.</p></div></article></div>
+    </section>
+
+    <section class="section benchmark-section" id="benchmark">
+      <div class="section-heading"><span>02</span><h2>OmniDex Benchmark</h2></div>
+      <div class="feature-row"><figure class="feature-figure"><img src="assets/fig1.png" alt="OmniDex data generation pipeline" loading="lazy"></figure><div class="feature-copy"><h3>Data Generation</h3><p>Reusable seed grasps are validated in dynamically settled cluttered scenes.</p></div></div>
+      <div class="feature-row feature-row-reverse"><div class="feature-copy"><h3>OmniDex Model</h3><p>Multimodal grasp generation with physical constraints and ranking.</p></div><figure class="feature-figure"><img src="assets/fig4.png" alt="OmniDex model architecture" loading="lazy"></figure></div>
+    </section>
+
+    <section class="section visuals-section" id="results">
+      <div class="section-heading"><span>03</span><h2>Results</h2></div>
+      <figure class="wide-figure result-overview"><div class="result-label">• Five benchmark regimes</div><img src="assets/results/overview.png" alt="OmniDex qualitative results across five cluttered-scene regimes" loading="lazy"></figure>
+      <div class="gallery-grid results-five"><figure><div class="result-label">• Standard tabletop</div><img src="assets/results/standard.png" alt="OmniDex tabletop grasping examples" loading="lazy"></figure><figure><div class="result-label">• Mixed supports</div><img src="assets/results/mixed-support.png" alt="OmniDex mixed-support grasping examples" loading="lazy"></figure><figure><div class="result-label">• Confined boxes</div><img src="assets/results/box.png" alt="OmniDex box grasping examples" loading="lazy"></figure><figure><div class="result-label">• Structured grids</div><img src="assets/results/grid.png" alt="OmniDex grid grasping examples" loading="lazy"></figure><figure><div class="result-label">• Retail shelves</div><img src="assets/results/shelf.png" alt="OmniDex shelf grasping examples" loading="lazy"></figure></div>
+    </section>
+
+    <section class="section citation-section" id="citation">
+      <div class="section-heading"><span>04</span><h2>BibTeX</h2></div>
+      <div class="citation-box"><pre id="bibtex-code">@inproceedings{fang2026omnidex,
+  title={OmniDex: Scaling Dexterous Hand Grasping to Diverse Cluttered Scenes},
+  author={Fang, Naiyu and Luo, Zhongjin and Mo, Yuxin and Huang, Siyuan and Liu, Jianbo and Liu, Yufei and Zhou, Zheyuan and Jin, Chenkai and Wang, Xiaogang and Li, Hongsheng},
+  booktitle={Advances in Neural Information Processing Systems},
+  year={2026}
+}</pre><button id="bibtex-button" type="button">Copy BibTeX <span id="bibtex-status">⧉</span></button></div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>OmniDex · NeurIPS 2026</span><a href="#top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
